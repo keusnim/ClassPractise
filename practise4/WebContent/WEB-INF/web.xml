@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>week8</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>GetArea</servlet-name>
+    <servlet-class>week8.GetArea</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetArea</servlet-name>
+    <url-pattern>/showArea</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Cart</servlet-name>
+    <servlet-class>week8.CartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cart</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
